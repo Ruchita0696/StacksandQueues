@@ -9,10 +9,6 @@ namespace StacksandQueues
     public class Stacks
     {
         public Node top;
-        public Stacks()
-        {
-            this.top = null;
-        }
         public void Push(int data)
         {
             Node newNode = new Node(data);
@@ -27,6 +23,7 @@ namespace StacksandQueues
             top = newNode;
             Console.WriteLine($"{data} pushed to stack");
         }
+        
         public void Peak()
         {
             if (top == null)
